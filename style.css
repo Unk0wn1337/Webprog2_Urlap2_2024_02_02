@@ -1,0 +1,44 @@
+body {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 600px;
+    background-color: aquamarine;
+    
+}
+label {
+    float: left;
+    width: 50%;
+}
+input {
+    clear: both;
+}
+
+
+legend {
+    display: block;
+    padding-left: 2px;
+    background: greenyellow;
+    border: solid 2px black;
+}
+.fieldsetContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#kotelezoMezo label::after  {
+    content: "*";
+    color: red;
+}
+
+.buttonColor {
+    background: greenyellow;
+    margin: 4px 4px 4px 4px;
+}
+
+
+@media screen and (max-width: 450px){
+    .fieldsetContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+} 

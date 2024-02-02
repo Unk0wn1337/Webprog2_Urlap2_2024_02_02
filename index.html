@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simon Kende - Űrlap 2</title>
+</head>
+<body>
+    <form action="#" method="get">
+    <fieldset id="kotelezoMezo">
+        <legend>regisztráció</legend>
+            <label for="fNev">Felhasználónév:</label>
+            <input type="text" id="fNev" name="fNev" value="csak ékezetes betük"><br>
+            <label for="jelszo">jelszo:</label>
+            <input type="text" id="jelszo" name="jelszo" value="min. 3 karakter"><br>
+            <label for="emailCim">e-mail cim:</label>
+            <input type="text" name="emailCim" id="emailCim" value="vmi@vmi.hu">
+    </fieldset>
+    </form>
+    <form action="#" method="get">
+    <fieldset>
+        <legend>születés</legend>
+        <label for="szuletesDatum">Születési dátum</label>
+        <input type="date"><br>
+        <fieldset>
+            <legend>személyes</legend>
+            <div class="fieldsetContainer">
+                
+                <div class="fieldsetElemek">
+                    <label for="nyelvel"></label>
+                    <label for="nemet"></label>
+                    <input type="checkbox" id="nyelvAngol" name="nemet" value="angol">
+                    <label for="nyelvNemet">Angol </label><br>
+                    <input type="checkbox" id="nyelvAngol" name="nyelvAngol" value="angol">
+                    <label for="nyelvNemet">Német </label><br>
+                </div>
+                <div class="fieldsetElemek">
+                    <label for="osztalyok">Válaszott szakok:</label>
+                    <select name="osztalyok" id="osztalyok">
+                    <option value="SZFA">SZFA</option>
+                    <option value="SZFA2">SZFA2</option>
+                    <option value="SZFAB">SZFAB</option>
+                    <br>
+                    </select>
+                </div>
+                <div class="fieldsetElemek">
+                <label for="nem"></label><br>
+                <input type="radio" id="age1" name="nem" value="30">
+                <label for="age1">férfi</label><br>
+                <input type="radio" id="age2" name="nem" value="60">
+                <label for="age2">nő</label><br> 
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+    <input type="submit" value="regisztráció" class="buttonColor">
+    </form>
+</body>
+</html>
